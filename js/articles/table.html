@@ -9,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="a in table.data">
+    <tr ng-repeat="a in table.articles">
       <td>{{a.votes.up - a.votes.down}}</td>
       <td><a href="{{a.linkUrl}}" target="_blank"><img ng-src="{{a.imageUrl}}"></a></td>
       <td><a href="{{a.linkUrl}}" target="_blank">{{a.title}}</a></td>

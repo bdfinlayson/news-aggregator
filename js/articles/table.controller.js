@@ -1,12 +1,14 @@
 angular
   .module('news')
-  .controller('ArticleTableCtrl', ArticleTableCtrl);
+  .controller('ArticleTableCtrl', ArticleTableCtrl)
 
-function ArticleTableCtrl(articleFactory) {
+function ArticleTableCtrl($http) {
   var vm = this;
 
-  articleFactory.findAll(function (articles) {
+  $http
+    .get('https://news-aggregator.firebaseio.com/articles.json')
+    .success(function (data) {
+      vm.articles = data;
+    });
 
-  	  vm.data = articles;
-  });
-};
+}

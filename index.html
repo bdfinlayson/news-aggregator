@@ -35,7 +35,7 @@
     <div class="container">
       <div ng-app="news" ng-controller="ArticleTableCtrl as table">
         <h1>NSS News</h1>
-        <div ng-include="'js/articles/table.html'"></div>
+        <div ng-view></div>
       </div>
     </div>
     <script src="bower_components/firebase/firebase.js"></script>
@@ -43,9 +43,8 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="js/main.module.js"></script>
+    <script src="js/main.config.js"></script>
     <script src="js/articles/table.controller.js"></script>
-    <script src="js/articles/article.factory.js"></script>
-
-
+    <script src="js/articles/new.controller.js"></script>
   </body>
 </html>

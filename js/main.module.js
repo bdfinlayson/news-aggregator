@@ -1,1 +1,1 @@
-angular.module('news', []);
+angular.module('news', ['ngRoute']);
