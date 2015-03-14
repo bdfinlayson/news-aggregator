@@ -7,6 +7,7 @@
     <title>My Title</title>
     <link rel="stylesheet" href="bower_components/skeleton/css/normalize.css">
     <link rel="stylesheet" href="bower_components/skeleton/css/skeleton.css">
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- http://bit.ly/1MwsrNr -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -35,6 +36,8 @@
     <div class="container">
       <div ng-app="news" ng-controller="ArticleTableCtrl as table">
         <h1>NSS News</h1>
+        <button value='submit'><a href='/#/submit'>New Post</a></button>
+        <button value='home'><a href='/#/'>Home</a></button>
         <div ng-view></div>
       </div>
     </div>
@@ -43,6 +46,7 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="js/main.module.js"></script>
+    <script src="js/main.filters.js"></script>
     <script src="js/main.config.js"></script>
     <script src="js/articles/table.controller.js"></script>
     <script src="js/articles/new.controller.js"></script>

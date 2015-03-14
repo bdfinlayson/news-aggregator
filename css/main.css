@@ -1,0 +1,35 @@
+.table--thumb {
+  max-width: 75px;
+  max-height: 75px;
+}
+
+.table--updown span, .table--updown i {
+  display: block;
+  text-align: center;
+}
+
+.table--updown i:first-child:hover {
+  color: orange;
+  opacity: 1;
+  transition: 0.5s linear;
+}
+
+.table--updown i:last-child:hover {
+  color: purple;
+  opacity: 1;
+  transition: 0.5s linear;
+}
+
+.table--updown i {
+  transition: 0.5s linear;
+}
+
+.up i:first-child {
+  color: orange;
+  opacity: 0.5;
+}
+
+.down i:last-child {
+  color: purple;
+  opacity: 0.5;
+}
